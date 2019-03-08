@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/ivfondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/planetearth" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/coheteCirculo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logocohete"
+            app:civ_border_color="#EEE"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#FFF"
+
+            app:civ_shadow_radius="0" />
+
+        <TextView
+            android:id="@+id/txtTituloSplash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bromello"
+            android:gravity="center"
+            android:text="@string/titulo_splash"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/txtSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tvSubtitulo"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>
